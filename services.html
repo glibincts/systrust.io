@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="/css/media.css">
+<link rel="stylesheet" href="/css/social-media.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" href="fevicon.png" type="image/gif" sizes="16x16">
+<script type="text/javascript" src="main.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script type="text/javascript" src="javascript.js">
+
+</script>
+</script>
+<script>
+  function enableBtn(){
+    document.getElementById("popbutton").disabled = false;
+   }
+   function myCloseButton(){
+		//alert("Hi");
+		document.getElementById("bg-modal").style.display ="none";
+   }
+   function contactuspop(){
+     document.getElementById("bg-modal").style.display ="block";
+      window.scrollTo(0, 0);
+   }
+</script>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<title>Our Services | Systrust Solutions</title>
+</head>
+<body>
+  <!-- Preloader -->
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+  <div class="whole-page-class">
+    <div class="top-class">
+      <div class="top-left-content">
+        <p class="w3-animate-top">Welcome to Systrust Solutions</p>
+      </div> <!--end of left top content-->
+      <div class="social-media-content">
+        <ul class="flat-social">
+            <li>
+              <a href="https://www.facebook.com/teamsystrust/" target="_blank" class="fa fa-facebook"></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/LtdSystrust" target="_blank" class="fa fa-twitter"></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/systrust-solutions-private-limited/" target="_blank" class="fa fa-linkedin"></a>
+            </li>
+        </ul>
+      </div> <!--end of social media div -->
+    </div> <!--end of top div -->
+    <header class="header" id="header">
+
+      <div class="logo-class">
+        <a href="index.html"><img class="img-logo" src="images/logo.png" alt=""></a>
+      </div> <!--logo -->
+      <div class="top-nav-class">
+        <ul class="nav-ul-class">
+          <a href="index.html"><li class="nav-home">Home</li></a>
+          <a href="index.html#footer-top"><li class="nav-about">About</li></a>
+          <a href="services.html"><li class="nav-services">Services</li></a>
+          <li class="nav-contactus" onclick="contactuspop()">Contact Us</li>
+        </ul> <!--nav ul end -->
+      </div> <!--end of top navigation section -->
+      <!--mobile gnav open -->
+
+      <!-- Simulate a smartphone / tablet -->
+      <div class="mobile-container">
+
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <div id="myLinks">
+          <a href="index.html" class="nav-home" id="nav-home">Home</a>
+          <a href="index.html#footer-top" class="nav-about" id="nav-about">About</a>
+          <a href="services.html" class="nav-services">Services</a>
+          <a onclick="contactuspop()" class="nav-contactus" >Contact Us</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+          <i class="fa fa-bars" id="fa"></i>
+        </a>
+      </div>
+
+
+      <!--mobile gnav end -->
+    </header><!--end of top menu -->
+    <div class="content">
+      <div class="content-1">
+        <div class="h2">
+          <h2>Our Services</h2>
+        </div>
+        <div class="services-header" id="services-header">
+          <ul class="services-header-ul">
+            <li class="webserv"><a href="services.html#web-1">Web Designing</a></li>
+            <li class="mobserv"><a href="services.html#mob-1">Mobile App Development</a></li>
+            <li class="socintserv"><a href="services.html#intsoc-1">Social Media and Internet Marketing</a></li>
+            <li class="graserv"><a href="services.html#gra-1">Graphic Designing</a></li>
+            <!--New-->
+            <li class="itc"><a href="services.html#itc-1">IT Consulting</a></li>
+            <li class="ent"><a href="services.html#ent-1">Enterprise Resource Planning</a></li>
+            <li class="hum"><a href="services.html#hum-1">Human Resource Management Solutions</a></li>
+            <li class="pay"><a href="services.html#pay-1">Payroll Services</a></li>
+            <li class="heal"><a href="services.html#heal-1">Solutions for Health Sector</a></li>
+            <li class="sma"><a href="services.html#sma-1">Smart Device Applications</a></li>
+            <li class="sys"><a href="services.html#sys-1">System Integration and Business Intelligence Solutions</a></li>
+            <!--New end here-->
+
+          </ul>
+        </div>
+        <!-- services div-->
+        <div class="services-content">
+          <div class="services-content-common" id="web-1">
+            <div class="services-content-text" id="1-web-content">
+              <div class="services-p">
+                <span>Web <b>Designing</b></span>
+              </div>
+              <div class="service-content-1">
+                <p>Our web design team focusing on user-friendly, simple, faster and reliable web sites and web applications. Along with the continuous maintenance support at anytime.</p>
+              </div>
+              <div class="services-content-2">
+                <span>Key Benefits:</span>
+                <ul>
+                  <li>UI/UX</li>
+                  <li>All major browsers</li>
+                  <li>Mobile(Android, iOS), Tab(Android, iOS)</li>
+                  <li>Quality assurance with automation </li>
+                  <li>Hosting services</li>
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="services-content-image" id="1web-image-1">
+              <img src="css/web-1.jpg" alt="">
+            </div> -->
+          </div>
+          <!-- WEb Services div end  -->
+          <div class="services-content-common" id="mob-1">
+            <!-- <div class="services-content-image" id="1mob-image-1">
+              <img src="css/mob-1.jpg" alt="">
+            </div> -->
+            <div class="services-content-text" id="1-mob-content">
+              <div class="services-p">
+                <span>Mobile <b>Development</b></span>
+              </div>
+              <div class="service-content-1">
+                <p>We build high-end user interactive mobile solutions. With the advanced tools and technologies, our engineers are very well trained to build mobile applications</p>
+              </div>
+              <div class="services-content-2">
+                <span>Key Benefits:</span>
+                <ul>
+                  <li>Android and iOS applications</li>
+                  <li>Hybrid app development</li>
+                  <li>Backup and recovery</li>
+                  <li>M-Commence</li>
+                  <li>Always up-to-date </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- mobile div end -->
+          <div class="services-content-common" id="intsoc-1">
+            <div class="services-content-text" id="intsoc-content-1">
+              <div class="services-p">
+                <span>Social Media & Internet <b>Marketing</b></span>
+              </div>
+              <div class="service-content-1">
+                <p>Social media is doing its vital role in current world of marketing. Our seasoned team of professional helps to increase maximum customers view.  </p>
+              </div>
+              <div class="services-content-2">
+                <span>Key Benefits:</span>
+                <ul>
+                  <li>Markerting with all major social medias </li>
+                  <li>Search engine optimization and its various techniques</li>
+                  <li>Digital marketing analysis</li>
+                  <li> Security and risk management</li>
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="services-content-image" id="1intsoc-image-1">
+              <img src="css/mar.jpg" alt="">
+            </div> -->
+          </div>
+          <!-- Internet social marketing end  -->
+          <div class="services-content-common" id="gra-1">
+            <!-- <div class="services-content-image" id="1gra-image-1">
+              <img src="css/gra.jpg" alt="">
+            </div> -->
+            <div class="services-content-text" id="gra-content-1">
+              <div class="services-p">
+                <span>Graphic <b>Designing</b></span>
+              </div>
+              <div class="service-content-1">
+                <p>Our experts in the field of graphic designing are always updated with latest tools and technologies to give better results.</p>
+              </div>
+              <div class="services-content-2">
+                <span>Key Benefits:</span>
+                <ul>
+                  <li>Corporate video editing</li>
+                  <li>End-to-end company design support </li>
+                  <li>Professional photography</li>
+                  <li>Graphical representations</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- new  -->
+          <div class="services-content-common" id="itc-1">
+            <div class="services-content-text" id="itc-content-1">
+              <div class="services-p">
+                <span>IT <b>Consulting</b></span>
+              </div>
+              <div class="service-content-1">
+                <p>Our skilled and certified software consultants and business analysts guides you to design, develop and implement software solutions that optimize productivity, operational efficiency and profitability.</p>
+              </div>
+              <!-- <div class="services-content-2">
+                <span>Key Benefits:</span>
+                <ul>
+                  <li> </li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div> -->
+            </div>
+            <!-- <div class="services-content-image" id="1itc-image-1">
+              <img src="css/itc.png" alt="">
+            </div> -->
+          </div>
+          <!-- itc end  -->
+          <div class="services-content-common" id="ent-1">
+            <!-- <div class="services-content-image" id="1ent-image-1">
+              <img src="css/ent.jpg" alt="">
+            </div> -->
+            <div class="services-content-text" id="ent-content-1">
+              <div class="services-p">
+                <span><b>Enterprise Resource</b> Planning</span>
+              </div>
+              <div class="service-content-1">
+                <p>Our ERP solutions include development, implementation, customization, upgrade and support of various ERP packages including, QuickBIS, Dynamics AX, Dynamics D365, Tally ERP, SAGE and Quick Books.</p>
+              </div>
+              <!-- <div class="services-content-2">
+                <span>Key Benefits:</span>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div> -->
+            </div>
+          </div>
+          <!-- ent end  -->
+          <div class="services-content-common" id="hum-1">
+            <div class="services-content-text" id="hum-content-1">
+              <div class="services-p">
+                <span>Human Resource <b>Management Solutions</b></span>
+              </div>
+              <div class="service-content-1">
+                <p>We believe Human Resource Management is a key factor in building your company. We provide Human Resource Management Solutions which will help you in maintaining a healthy dialogue with your employees. Furthermore, we help in training, staffing, recruiting and building a positive atmosphere to work.</p>
+              </div>
+              <!-- <div class="services-content-2">
+                <span>Key Benefits:</span>
+                <ul>
+                  <li> </li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div> -->
+            </div>
+            <!-- <div class="services-content-image" id="1hum-image-1">
+              <img src="css/hr.png" alt="">
+            </div> -->
+          </div>
+          <!-- hum end  -->
+          <div class="services-content-common" id="pay-1">
+            <!-- <div class="services-content-image" id="1pay-image-1">
+              <img src="css/pay.jpg" alt="">
+            </div> -->
+            <div class="services-content-text" id="pay-content-1">
+              <div class="services-p">
+                <span><b>Payroll</b> Services</span>
+              </div>
+              <div class="service-content-1">
+                <p>Payroll services automatically helps you compute how much every employee should be paid by taking into account various factors like time keeping, bonuses, withheld taxes and so on. Having a payroll service helps you to account better on a wide range of administrative and labor issues.</p>
+              </div>
+              <!-- <div class="services-content-2">
+                <span>Key Benefits:</span>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div> -->
+            </div>
+          </div>
+          <!-- pay end  -->
+          <div class="services-content-common" id="heal-1">
+            <div class="services-content-text" id="heal-content-1">
+              <div class="services-p">
+                <span>Solutions for <b>Health Sector</b></span>
+              </div>
+              <div class="service-content-1">
+                <p>We provide technological and software solutions for health care. Automation services is essential to provide better health services. With modern and advanced solutions health care can be provided more conveniently and effectively.</p>
+              </div>
+              <!-- <div class="services-content-2">
+                <span>Key Benefits:</span>
+                <ul>
+                  <li> </li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div> -->
+            </div>
+            <!-- <div class="services-content-image" id="1heal-image-1">
+              <img src="css/health.jpg" alt="">
+            </div> -->
+          </div>
+          <!-- heal end  -->
+          <div class="services-content-common" id="sma-1">
+            <!-- <div class="services-content-image" id="1sma-image-1">
+              <img src="css/smart.jpg" alt="">
+            </div> -->
+            <div class="services-content-text" id="sma-content-1">
+              <div class="services-p">
+                <span><b>Smart Device</b> Applications</span>
+              </div>
+              <div class="service-content-1">
+                <p>Our advanced smart device applications, developed by our innovative and dexterous in-house engineers and designers, facilitate micro, small, medium and large enterprises to enhance the performance with minimal resource cost.</p>
+              </div>
+              <!-- <div class="services-content-2">
+                <span>Key Benefits:</span>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div> -->
+            </div>
+          </div>
+          <!-- sma end  -->
+          <div class="services-content-common" id="sys-1">
+            <div class="services-content-text" id="sys-content-1">
+              <div class="services-p">
+                <span>System Integration and Business Intelligence Solutions</span>
+              </div>
+              <div class="service-content-1">
+                <p>Speed up decision making with comprehensive, simple to use real time reporting by integrating data from multiple sources.</p>
+              </div>
+              <!-- <div class="services-content-2">
+                <span>Key Benefits:</span>
+                <ul>
+                  <li> </li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div> -->
+            </div>
+            <!-- <div class="services-content-image" id="1sys-image-1">
+              <img src="css/system.jpg" alt="">
+            </div> -->
+          </div>
+          <!-- sys int end  -->
+          <!-- new end  -->
+          <!-- Graphic end  -->
+
+          <!-- Graphic end  -->
+
+          <!-- Graphic end  -->
+
+          <!-- Graphic end  -->
+
+          <!-- Graphic end  -->
+
+          <!-- new end  -->
+        </div>
+        <!-- Services div end  -->
+      </div>
+    </div>
+    <footer>
+      <div class="footer-top">
+        <div class="left-footer-class">
+          <p class="footer-content">Systrust Solutions is a rapidly growing IT solutions company with a dedicated team of experts in the areas of requirement analysis, planning, development and support for various IT solutions.</p>
+        </div>
+        <div class="right-footer-class">
+          <span>USEFUL LINKS</span>
+          <div class="usefullinks">
+            <ul class="ulusefullinks">
+              <a href="index.html"><li class="nav-home">Home</li></a>
+              <a href="index.html#footer-top"><li class="nav-about">About</li></a>
+              <a href="services.html"><li class="nav-services">Services</li></a>
+              <li class="nav-contactus" onclick="contactuspop()">Contact Us</li>
+            </ul>
+          </div>
+          </div>
+          <div class="right-footer-class">
+              <span>REACH US</span><br>
+              <div class="address">
+                <span>No.55 and 55/1, 6th  <br>Phase, J.P Nagar, <br>Bangalore 560078 <br> Karnataka, India <br>Ph:+91 8041202633</span><br>
+                <span class="emailus-class">Email us:team@systrust.in</span>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom-content">© Copyright 2018 Systrust Solutions | All Rights Reserved</p>
+      </div>
+    </footer>
+    <!--div for model-->
+    <div class="bg-modal" id="bg-modal">
+    <div class="modal-content" id="modal-content">
+      <button id="popupclose" class="popupclose" onclick="myCloseButton()">X</button>
+     <h3 class="pop-header">GET IN TOUCH WITH US</h3>
+     <div class="form-builder">
+         <form action="popup.php" method="post">
+           <div class="formdiv">
+          <input type="text" id="name" name="name" placeholder="Name" class="input" required="">
+          <input type="email" id="email" name="email" placeholder="Email Address" class="input" required=""><br>
+          <input type="number" id="phone" name="phone" placeholder="Phone Number" class="input2" pattern="[0-9]">
+          <input type="text" id="country" name="country" placeholder="Country" class="input2" required><br>
+          <textarea rows="4" id="textarea" name="textarea" required="" class="textarea"></textarea>
+          <div class="capbut">
+              <div class="g-recaptcha" data-sitekey="6LesYIcUAAAAAC44UF4iEpH1Qat6b-ZQ74S7pvb6" data-callback="enableBtn"></div>
+              <!-- <span id="captcha" style="margin-left:50px;color:red"> -->
+              <button id="popbutton" class="allservices" onsubmit="onSubmit()" disabled="" >Submit</button>
+              <!-- </span> -->
+          </div>
+         </div>
+        </form>
+      </div>
+
+  </div> <!-- first modal  ends here-->
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</div> <!--End of main div -->
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("services-header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+
+</script>
+<script>
+function myFunction2() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
